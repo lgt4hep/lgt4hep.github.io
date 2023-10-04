@@ -1,0 +1,233 @@
+﻿@charset "utf-8";
+
+body {
+  background-image: linear-gradient( 0deg, black, black 20%, #472 );
+	background-repeat: no-repeat;
+  background-color: #000;
+	font-family: Georgia, Georgia, serif;
+	font-size: 12pt;
+	color: #000;
+	padding: 0pt;
+	border: 0pt;
+	margin-right: auto;
+	margin-left: auto;
+  width: 820px;
+}
+#pageholder { background-color: #ad8;/*overflow: hidden;*/ }
+/* Main Body Settings */
+#main_body {
+	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-left: 10px;
+	background-color: #fff;
+	font-family: Georgia, Georgia, serif;
+	font-size: 12pt;
+	color: #000;
+}
+/* Holder for the rest */
+#content {
+	clear: both;
+	background-color: #fff;
+  width: 820px;
+}
+#spacer {
+  height: 75px;
+	background-color: #fff;
+}
+#footer {
+	clear: both;
+	padding: 0px 0px 0px 0px;
+	background-color: #000;
+	color: #ff0;
+	height: 30px;
+	font-size: normal;
+	font-weight: bold;
+}
+#footer .left {
+  height: 30px;
+  width: 820px;
+  background-color: #000;
+}
+#footer .right {
+ position: relative;
+ right: 10px;
+ bottom: 20px;
+}
+#skyline {
+	clear: none;
+	height: 20px;
+  width: 820px;
+	position: relative;
+	bottom: 205px;
+	left: 0px;
+}
+
+#iecenter {
+	text-align: center;
+}
+#frame {
+	width: 837px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0pt solid #ED7;
+	height: 100%;
+	background-color: #000;
+	font-family: Georgia, Georgia, serif;
+	font-size: 12pt;
+	color: #FFF;
+	text-align: left;
+	padding: 0pt 5pt 0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+}
+
+.hide { display: none; }
+.left {
+	text-align: left;
+	float: left;
+}
+.right {
+	text-align: right;
+	float: right;
+}
+/* Divisions */
+div.clear{ clear: both; }
+/* Links */
+a:link { color: #00a; }
+a:visited { color: #33a; }
+a:active { color:#f0a; }
+a:hover{ color: #22f; }
+/* Paragraphs */
+p.first { padding-top: 20px; }
+li { padding: 5px 30px 5px 10px; }
+p {
+	font-family: Georgia, Georgia, serif;
+	font-size: 12pt;
+	color: #000;
+	padding: 0px 35px 0px 25px;
+}
+/* Headers */
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24pt;
+	font-weight: bold;
+	color: #271;
+	margin: 30pt 20pt 15pt;
+  border-bottom: 1pt solid #88A;
+  padding-left: 20pt;
+  text-indent: -20pt;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	color: #000;
+	margin: 25pt 20pt 10pt;
+}
+h3 {
+	font-family: Georgia, Georgia, serif;
+	font-size: 14pt;
+  font-weight: bold;
+	color: #000;
+	margin: 25pt 20pt 10pt;
+}
+h2 + p, h3 + p, p.h2, p.h3 { padding-left: 35px; }
+h4 {
+	font-family: Georgia, Georgia, serif;
+	font-size: 13pt;
+  font-weight: bold;
+	color: #000;
+	margin: 10pt 25pt 10pt;
+}
+h5 {
+	font-family: Georgia, Georgia, serif;
+	font-size: 12pt;
+  font-weight: bold;
+	color: #472;
+	margin: 10pt 25pt 10pt;
+}
+h4 + p, h5 + p, p.h4, p.h5 { padding-left: 40px; }
+
+#banner img {
+  margin: 0px; padding: 2px;
+}
+
+/** Navigation controls **/
+/* Main nav bar */
+ul#navlist {
+  margin: 0px auto;
+  right-border: 10px solid white;
+  padding: 0px;
+  height: 40px;
+  width: 100%;
+  display: table; /* This is the secret to centering items with unknown width */
+}
+/* Main bar items */
+#navlist>li {
+  height: 40px;
+  float: left;
+  width: 16.66%;
+  overflow:hidden;
+	list-style-type: none;
+  background-color: white;
+  padding: 0;
+}
+/* Main bar and sublist buttons */
+#navlist a {
+  margin: 0px; padding: 5px 100% 5px 15px;
+  border: 0px solid #014;
+  line-height: 40px;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+  white-space: nowrap;
+  background-color: #241;
+}
+#navlist>li:hover>a{
+  line-height: 45px;
+  background-color: #664;
+  border: 0px solid #345;
+  border-right-width: 0px;
+}
+/* Navlist-sublist interface */
+#navlist>li:hover {
+  overflow: visible;
+}
+#navlist>li:hover ul#sublist {
+  display: block;
+}
+#sublist { 
+  border-right: 1px solid #014;
+  display: none;
+  float: none;
+  position: relative;
+  top: -5px;
+  left: 0;
+  width: 180px;
+  overflow: hidden;
+}
+#sublist>li { 
+  height: 28px;
+  float: none;
+	list-style-type: none;
+  text-align: center;
+  margin: 3px 0px 1px; padding: 0;
+}
+#sublist a {
+  margin: 0; padding: 5px 100% 5px 10px;
+  border: 1px solid #140a00;
+  line-height: 26px;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+  white-space: nowrap;
+  background-color: #251b11;
+}
+#sublist a:hover{
+  line-height: 26px;
+  background-color: #5e260f;
+  border: 1px solid #4d130e;
+}
