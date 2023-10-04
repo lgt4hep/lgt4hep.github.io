@@ -165,7 +165,7 @@ ul#navlist {
 #navlist>li {
   height: 40px;
   float: left;
-  width: 16.66%;
+  width: 20%;
   overflow:hidden;
 	list-style-type: none;
   background-color: white;
