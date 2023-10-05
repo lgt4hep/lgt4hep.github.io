@@ -192,7 +192,7 @@ ul#navlist {
 }
 /* Navlist-sublist interface */
 #navlist>li:hover {
-  overflow: visible;
+  overflow: hidden;
 }
 #navlist>li:hover ul#sublist {
   display: block;
